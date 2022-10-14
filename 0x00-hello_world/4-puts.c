@@ -1,8 +1,8 @@
 #include<stdio.h>
 /**
-*main-	it is a function that must be created for safe running of the function
-*return-	ensure if the function runs 
-*/
+ * main- serve as the container to run the gunction.
+ * Return: return 0 by default if theprogram runs.
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
