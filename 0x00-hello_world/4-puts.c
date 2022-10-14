@@ -1,7 +1,8 @@
 #include<stdio.h>
-/*a C program that prints exactly 
- * "Programming is like building a multilingual puzzle, 
- * followed by a new line.
+/**
+ *main-it is a function that must be created for safe running of the function
+ *
+ *return- ensure if the function runs 
  */
 int main(void)
 {
