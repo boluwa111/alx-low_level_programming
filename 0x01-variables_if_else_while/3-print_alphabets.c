@@ -1,23 +1,26 @@
 /**
- *main- container for the program
- *Return 0-no error,non zero value if error.
+ * main- container for the program
+ * Return: 0-no error,non zero value if error.
 **/
 int main(void)
 {
-	int n;
+	int i, j;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n >  0)
+	for (i = 0; i < 99; i++)
 	{
-		Printf("%d is positive\n", n);
+		for (j = i + 1; j <= 99; j++)
+		{
+			putchar('0' + i / 10);
+			putchar('0' + i % 10);
+			putchar(' ');
+			putchar('0' + j / 10);
+			putchar('0' + j % 10);
+			if (i == 98 && j == 99)
+				break;
+			putchar(',');
+			putchar(' ');
+		}
+		putchar('\n');
+		return (0);
 	}
-	else if (n < 0)
-	{
-		printf("%d is negative\n", n);
-	}
-	else if (n == 0)
-		printf("%d is zero\n", n);
-	return (0);
 }
-
