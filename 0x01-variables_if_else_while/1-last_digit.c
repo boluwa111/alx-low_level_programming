@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
  *main- serves as the container of the function.
  *Return: 0 if the function runs else return non zero.
