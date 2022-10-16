@@ -1,3 +1,4 @@
+#include<stdio.h>
 /**
  * main- container for the program
  * Return: 0-no error,non zero value if error.
