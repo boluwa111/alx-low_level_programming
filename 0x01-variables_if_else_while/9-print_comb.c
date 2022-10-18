@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- *main- program entry point.
- *Return: 0 success, non zero error.
+ *main- cointaner for the program.
+ *Return: 0 when programs run else non zero error.
 **/
 int main(void)
 {

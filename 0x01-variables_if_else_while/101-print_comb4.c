@@ -5,20 +5,20 @@
 */
 int main(void)
 {
-	int m, i, j;
+	int f, i, j;
 
 	for (i = '0'; i <= '9'; i++)
 	{
 		for (j = '0'; j <= '9'; j++)
 		{
-			for (m = '0'; m <= '9'; m++)
+			for (f = '0'; f <= '9'; f++)
 			{
-				if (i < j && j < m)
+				if (i < j && j < f)
 				{
 					putchar(i);
 					putchar(j);
-					putchar(m);
-					if (i == '7' && j == '8' && m == '9')
+					putchar(f);
+					if (i == '7' && j == '8' && f == '9')
 					{
 						break;
 					}
