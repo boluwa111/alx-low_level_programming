@@ -1,5 +1,5 @@
-#ifndef main_included
-#define main_included
+#ifndef header_included
+#define header_included
 #include <unistd.h>
 #include<stdio.h>
 /**
@@ -12,4 +12,4 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
-#endif /*main_h_included*/
+#endif /*header_h_included*/
