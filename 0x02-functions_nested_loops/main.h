@@ -1,14 +1,8 @@
 #ifndef main_included
 #define main_included
-#include <unistd.h>                                                                                                             
 /**
- *_putchar- writes the character c to stdout.
- *@c: The character to print.
- *Return: On success 1.On error,-1
- *is returned, and errno is set appropriately.
+ * _putchar- this takes an input and displays it on the screen.
+ * @c: this is the input to _putchar.
 */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
+void _putchar(char c);
 #endif /*main_h_included*/
