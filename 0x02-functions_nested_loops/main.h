@@ -5,10 +5,6 @@
  * @c: this is the input to _putchar.
  * print_alphabet: print lower case letter from a-z.
 */
-int main(void)
-{
-	void _putchar(char c);
-	void print_alphabet(void);
-	return (0);
-}
+void _putchar(char c);
+void print_alphabet(void);
 #endif /*main_h_included*/
