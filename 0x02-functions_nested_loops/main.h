@@ -17,4 +17,5 @@ void jack_bauer(void);
 int add(int, int);
 int print_sign(int n);
 void times_table(void);
+void print_to_98(int n)
 #endif /*main_h_included*/
