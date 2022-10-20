@@ -22,7 +22,7 @@ void jack_bauer(void)
 		minutes_ones = '0';
 		while (minutes_tens < '6')
 		{
-		minutes_ons = '0';
+		minutes_ones = '0';
 		while (minutes_ones < 58)
 		{
 			_putchar(hours_tens);
