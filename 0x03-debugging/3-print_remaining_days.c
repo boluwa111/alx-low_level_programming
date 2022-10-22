@@ -1,22 +1,33 @@
 #include "main.h"
 /**
- * main- takes a data and prints how many days are left in a year.
- * Return: ) if the program runs succesfully
+ * print_remaining_days - picks a date
+ * and prints how many day left
+ * @month: month in number format
+ * @day: day of the month
+ * @year: year
+ * Return: void
 */
-int main(void)
+void print_remaining_days(int month, int day, int year)
 {
-	int month;
-	int day;
-	int year;
+	if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))
+	{
+		if (month >= 3 && day >= 60)
+		{
+			day++;
+		}
 
-	month = 4;
-	day = 81;
-	year = 1997;
-	printf("Date: %02d/%02d/%04d\n", month, day, year);
-
-	day = convert_day(month, day);
-
-	print_remaining_days(month, day, year);
-
-	return (0);
+		printf("Day of the year: %d\n", day);
+		printf("Remaining days: %d\n", 366 - day);
+	}
+	else
+	{
+		if (month == 2 && day == 60)
+		{
+			printf("Invalid date: %02d/%02d/%04d\n", month, day = 31, year);
+		}
+		else
+		{
+			printf("Day of the year: %d\n", day);
+		}
+	}
 }
