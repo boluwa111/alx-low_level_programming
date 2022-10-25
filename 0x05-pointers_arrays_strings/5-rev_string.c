@@ -11,7 +11,7 @@ void rev_string(char *s)
 	int i;
 
 	while (s[k] != '\0')
-		c++;
+		k++;
 	for (i = 0; i < k; i++)
 	{
 		k--;
