@@ -2,10 +2,10 @@
 
 /**
  * cap_string - function that capitalizes all words of a string
- * @n: string
+ * @str: string
  * Return: pointer to string
  */
-char *cap_string(char *n)
+char *cap_string(char *str)
 {
 	int j = 0;
 
