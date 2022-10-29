@@ -28,8 +28,8 @@ char *cap_string(char *n)
 			 str[j - 1] == '}' ||
 			 j == 0)
 				str[j] -= 32;
-			j++;
 		}
+		j++;
 	}
 	return (str);
 }
