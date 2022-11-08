@@ -1,11 +1,12 @@
-#include "main.h"
+#include "stdio.h"
 
 /**
- * main - the main programme
- * @argc: cont of argv
- * @argv: the input element
- * Return: always return 0
+ * main - this is where the program runs
+ * @argc: count of elements in argv
+ * @argv: array of input element
+ * Return: always 0
  */
+
 int main(int argc, char *argv[] __attribute__((unused)))
 {
 	printf("%d\n", argc - 1);
