@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - contains the code
@@ -9,8 +9,19 @@
 
 int main(int argc, char *argv[])
 {
-	for (int i = 0; i < argc; i++)
+	int i;
+	int sum = 0;
+
+	if (argc == 3)
+		for (i = 1; i < 3; i++)
 	{
-		printf("%s", argv[i])
+		sum = sum + atoi(argv[i]);
 	}
+	else
+	{
+		printf("%s\n", Error);
+		return (1);
+	}
+	printf("%d\n", sum)
+
 }
