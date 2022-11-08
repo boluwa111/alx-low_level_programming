@@ -9,9 +9,6 @@
 
 int main(int argc __attribute__((unused)), char *argv[])
 {
-	for (int i = 0; i < argc; i++)
-	{
-		_putchar(argv[i]);
-	}
+	print("%s\n", argv[0]);
 	return (0);
 }
