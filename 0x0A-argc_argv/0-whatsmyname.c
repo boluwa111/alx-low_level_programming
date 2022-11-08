@@ -9,7 +9,7 @@
 
 int main(int argc __attribute__((unused)), char *argv[])
 {
-	for (int i = 0; i <= argc; i++)
+	for (int i = 0; i < argc; i++)
 	{
 		_putchar(*argv[i]);
 	}
