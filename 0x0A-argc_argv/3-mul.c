@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 {
 	if (argc > 2)
 	{
-		printf("%d\n", atol(argv[1]) * atol(argv[2]));
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 		return (0);
 	}
 	else if (argc < 3)
