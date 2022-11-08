@@ -22,6 +22,6 @@ int main(int argc, char *argv[])
 		printf("%s\n", Error);
 		return (1);
 	}
-	printf("%d\n", sum)
+	printf("%d\n", sum);
 
 }
