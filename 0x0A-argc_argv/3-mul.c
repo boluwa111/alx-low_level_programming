@@ -18,9 +18,9 @@ int main(int argc, char *argv[])
 	{
 		product = product * atoi(argv[i]);
 	}
-	else
+	else (argc > 3)
 	{
-		printf("Error");
+		printf("Error\n");
 		return (1);
 	}
 	printf("%d\n", product);
