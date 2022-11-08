@@ -9,6 +9,9 @@
 
 int main(int argc __attribute__((unused)), char *argv[])
 {
-	printf("%s\n", *argv);
+	for (int i = 0; i <= argc; i++)
+	{
+		_putchar(*argv[i]);
+	}
 	return (0);
 }
