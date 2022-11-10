@@ -24,14 +24,14 @@ int main(int argc, char *argv[])
 		additive = strtol(argv[i], &no, 10);
 		if (*no == '\0')
 		{
-		sum += additive;
+			sum += additive;
 		}
 		else
 		{
 			printf("Error\n");
 			return (1);
 		}
-		printf("%d\n", sum);
-		return (0);
 	}
+	printf("%d\n", sum);
+	return (0);
 }
