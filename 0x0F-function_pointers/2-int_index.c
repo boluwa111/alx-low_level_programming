@@ -3,6 +3,7 @@
 /**
  * int_index - a function that searches for an integer.
  * @size: number of elements in the array array
+ * @array: the input array
  * @cmp: a pointer to the function to be used to compare values
  * Return: 0 if there is matches else -1
  */
@@ -18,5 +19,5 @@ int int_index(int *array, int size, int (*cmp)(int))
 				return (i);
 		}
 	}
-	return(-1);
+	return (-1);
 }
