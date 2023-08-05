@@ -11,38 +11,37 @@
 
 int main(int argc, char **argv)
 {
-    int amount;
-    int change[] = {25, 10, 5, 2, 1};
-    int count = 0;
+	int amount;
+	int change[] = {25, 10, 5, 2, 1};
+	int count = 0;
 
-    if (argc == 2)
-    {
-        if (argv[1] >= 0)
-        {
-            amount = atoi(argv[1]);
-            for (int i = 0; i < 5; i++)
-            {
-
-                if (amount >= change[i])
-                {
-                    count += (amount / change[i]);
-                    amount = amount % change[i];
-                }
-                else if (amount == 0)
-                {
-                    break;
-                }
-            }
-            printf("%d\n", count);
-        }
-        else
-        {
-            printf("0\n");
-        }
-    }
-    else
-    {
-        printf("Error\n");
-	return 1;
-    }
+	if (argc == 2)
+	{
+		if (argv[1] >= 0)
+		{
+			amount = atoi(argv[1]);
+			for (int i = 0; i < 5; i++)
+			{
+				if (amount >= change[i])
+				{
+					count += (amount / change[i]);
+					amount = amount % change[i];
+				}
+				else if (amount == 0)
+				{
+					break;
+				}
+			}
+			printf("%d\n", count);
+		}
+		else
+		{
+			printf("0\n");
+		}
+	}
+	else
+	{
+		printf("Error\n");
+		return (1);
+	}
 }
