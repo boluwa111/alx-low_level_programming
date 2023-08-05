@@ -17,21 +17,28 @@ int main(int argc, char **argv)
 
     if (argc == 2)
     {
-        amount = atoi(argv[1]);
-        for (int i = 0; i < 5; i++)
+        if (argv[1] >= 0)
         {
+            amount = atoi(argv[1]);
+            for (int i = 0; i < 5; i++)
+            {
 
-            if (amount >= change[i])
-            {
-                count += (amount / change[i]);
-                amount = amount % change[i];
+                if (amount >= change[i])
+                {
+                    count += (amount / change[i]);
+                    amount = amount % change[i];
+                }
+                else if (amount == 0)
+                {
+                    break;
+                }
             }
-            else if (amount == 0)
-            {
-                break;
-            }
+            printf("%d\n", count);
         }
-        printf("%d\n", count);
+        else
+        {
+            printf("0\n");
+        }
     }
     else
     {
