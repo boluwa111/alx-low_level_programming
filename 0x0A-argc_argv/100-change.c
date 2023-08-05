@@ -16,7 +16,9 @@ int main(int argc, char *argv[])
 		int change[] = {25, 10, 5, 2, 1};
 		int count = 0;
 
-		if (argv[1] >= 0)
+		amount = atoi(argv[1]);
+
+		if (amount >= 0)
 		{
 			amount = atoi(argv[1]);
 			for (int i = 0; i < 5; i++)
