@@ -10,19 +10,23 @@
 
 char *argstostr(int ac, char **av)
 {
+	int total_length;
+	int i;
+	char *result;
+	int current_index;
+
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	int total_length = 0;
-	int i;
+	total_length = 0;
 
 	for (i = 0; i < ac; i++)
 		total_length += strlen(av[i]) + 1;
 
-	char *result = (char *)malloc(total_length * sizeof(char));
+	result = (char *)malloc(total_length * sizeof(char));
 
 	if (result == NULL)
 		return (NULL);
-	int current_index = 0;
+	current_index = 0;
 
 	for (i = 1; i < ac; i++)
 	{
