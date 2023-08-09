@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	if (argc == 2)
 	{
 		int amount;
-		int change[5];
+		int change[6];
 		int count;
 		int i;
 
