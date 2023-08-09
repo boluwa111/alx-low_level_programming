@@ -15,11 +15,12 @@ int main(int argc, char *argv[])
 		int amount;
 		int *change;
 		int count;
-		int change = {25, 10, 5, 2, 1};
+		int *change;
 		int i;
 
 		amount = atoi(atoi(argv[i]);
 		count = 0;
+		change = {25, 10, 5, 2, 1};
 
 		if (amount >= 0)
 		{
