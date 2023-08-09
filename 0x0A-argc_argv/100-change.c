@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 		int count;
 		int i;
 
-		amount = atoi(atoi(argv[i]);
+		amount = atoi(argv[i]);
 		count = 0;
 		change = {25, 10, 5, 2, 1};
 
