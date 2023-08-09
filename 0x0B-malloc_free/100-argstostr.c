@@ -28,7 +28,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	current_index = 0;
 
-	for (i = 1; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
 		strcpy(result + current_index, av[i]);
 		current_index += strlen(av[i]);
