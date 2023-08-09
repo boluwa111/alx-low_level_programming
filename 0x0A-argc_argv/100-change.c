@@ -13,15 +13,17 @@ int main(int argc, char *argv[])
 	if (argc == 2)
 	{
 		int amount;
-		int change[] = {25, 10, 5, 2, 1};
+		int change[];
 		int count = 0;
 
+		change[] = {25, 10, 5, 2, 1};
 		amount = atoi(argv[1]);
+		int i;
 
 		if (amount >= 0)
 		{
 			amount = atoi(argv[1]);
-			for (int i = 0; i < 5; i++)
+			for (i = 0; i < 5; i++)
 			{
 				if (amount >= change[i])
 				{
