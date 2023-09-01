@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "lists.h"
 
 /**
  * free_list - a function that frees linked list
