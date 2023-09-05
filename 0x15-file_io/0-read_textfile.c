@@ -13,40 +13,39 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
+	FILE *file;
+	char *buffer;
+	size_t byte_read;
+	ssize_t bytes_written;
+
 	if (filename == (NULL))
 		return (0);
 
-	FILE *fprt;
+	file = fopen(filename, "rt");
 
-	fprt = fopen(filename, "rt");
-
-	if (fprt == (NULL))
+	if (file == (NULL))
 		return (0);
-
-	char *buffer;
 
 	buffer = (char *)malloc(letters + 1);
 
 	if (buffer == (NULL))
 	{
-		fclose(fprt);
+		fclose(file);
 		return (0);
 	}
-
-	size_t byte_read;
-	ssize_t bytes_written;
-
+	
+	byte_read = fread(buffer, 1, letters, file);
 	buffer[byte_read] = '\0';
 	bytes_written = write(STDOUT_FILENO, buffer, byte_read);
 
 	if (bytes_written == (-1) || (size_t)bytes_written != byte_read)
 	{
 		free(buffer);
-		fclose(fprt);
+		fclose(file);
 		return (0);
 	}
 
 	free(buffer);
-	fclose(fprt);
+	fclose(file);
 	return (bytes_written);
 }
