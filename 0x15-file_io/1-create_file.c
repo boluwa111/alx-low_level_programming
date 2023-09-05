@@ -13,7 +13,7 @@ int create_file(const char *filename, char *text_content)
 	int len;
 	int wrt;
 
-	if (!flename)
+	if (!filename)
 		return (-1);
 
 	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
@@ -23,7 +23,7 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 
-	for (int len = 0; text_content[len] != NULL; len++)
+	for (len = 0; text_content[len] != '\0'; len++)
 		;
 	wrt = write(fd, text_content, len);
 	if (wrt == -1)
